@@ -78,3 +78,6 @@ int main()
 	cout << "Time: " << seconds << " s." << endl;
 	return 0;
 }
+
+//Потрачено времени 6ч
+//Сложность алгоритма O(n)

@@ -63,9 +63,9 @@ int main()
 	}
 
 	min_distance = minx - 1;
-	temp1 = abs(firstWordIndex[0] - secondWordIndex[secondWordIndex.size() - 1])-1;
+	temp1 = abs(firstWordIndex[0] - secondWordIndex[secondWordIndex.size() - 1])-1; //Находим максимальную дистанцию между первыми и последними совпадениями
 	temp2 = abs(secondWordIndex[0] - firstWordIndex[firstWordIndex.size() - 1])-1;
-	if (temp1 > temp2) //Находим максимальную дистанцию между первыми и последними совпадениями
+	if (temp1 > temp2) //Выбираем наибольшую
 		max_distance = temp1;
 	else
 		max_distance = temp2;

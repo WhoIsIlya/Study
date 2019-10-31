@@ -42,12 +42,12 @@ int main()
 	while (i < secondWordIndex.size() && j < secondWordIndex.size()) //Проходим оба массива один раз
 	{
 		int x = firstWordIndex[i] - secondWordIndex[j]; //Разница между текущими элементами двух массивов
-		if (x < 0)										//Если она меньше нуля, то инверсируем и двигаемся дальше по первому массиву
+		if (x < 0) //Если она меньше нуля, то инверсируем и двигаемся дальше по первому массиву
 		{
 			x = -x;
 			i++;
 		}
-		else if (x > 0)									//Если больше нуля, то смещаемся по второму массиву
+		else if (x > 0) //Если больше нуля, то смещаемся по второму массиву
 		{
 			j++;
 		}
@@ -56,7 +56,7 @@ int main()
 			minx = 0;
 			break;
 		}
-		if (x < minx)									//Если меньше текущей, то заменяем
+		if (x < minx) //Если меньше текущей, то заменяем
 		{
 			minx = x;
 		}
@@ -65,7 +65,7 @@ int main()
 	min_distance = minx - 1;
 	temp1 = abs(firstWordIndex[0] - secondWordIndex[secondWordIndex.size() - 1])-1;
 	temp2 = abs(secondWordIndex[0] - firstWordIndex[firstWordIndex.size() - 1])-1;
-	if (temp1 > temp2)									//Находим максимальную дистанцию между первыми и последними совпадениями
+	if (temp1 > temp2) //Находим максимальную дистанцию между первыми и последними совпадениями
 		max_distance = temp1;
 	else
 		max_distance = temp2;
